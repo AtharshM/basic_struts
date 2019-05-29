@@ -8,6 +8,13 @@
 </head>
 <body>
  
-TEsting
+ 
+ 
+ 	  <s:form action = "index.action" method = "post" enctype = "multipart/form-data">
+         <s:textfield label="Enter the company name" key = "secondoutput" />
+         <s:submit key = "submit" />
+      </s:form>
+      
+
 </body>
 </html>

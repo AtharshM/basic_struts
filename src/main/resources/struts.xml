@@ -8,9 +8,16 @@
     <constant name="struts.devMode" value="true" />
 
     <package name="basic_project" extends="struts-default">
-        <action name="index" class="com.action.FirstAction">
+        <action name="index"  class="com.action.FirstAction" method="newMethod">
             <result name="success">/index.jsp</result>
              <result name="failed">/failed.jsp</result>
+             <result name="zoho">/zoho.jsp</result>
+             <result name="input">/index.jsp</result>
+           
+        </action>
+       <action name="DbaccessAction"  class="com.action.DbaccessAction" >
+            <result name="success">/success.jsp</result>
+   
            
         </action>
     </package>

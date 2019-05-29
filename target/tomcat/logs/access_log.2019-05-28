@@ -91,3 +91,4 @@
 0:0:0:0:0:0:0:1 - - [28/May/2019:17:54:22 +0530] "GET /basic_project/ HTTP/1.1" 200 281 http-bio-8080-exec-6 2
 0:0:0:0:0:0:0:1 - - [28/May/2019:17:54:26 +0530] "GET /basic_project/index HTTP/1.1" 200 131 http-bio-8080-exec-7 5
 0:0:0:0:0:0:0:1 - - [28/May/2019:17:55:28 +0530] "GET /basic_project/index HTTP/1.1" 200 281 http-bio-8080-exec-1 185
+0:0:0:0:0:0:0:1 - - [28/May/2019:18:32:51 +0530] "GET /basic_project/ HTTP/1.1" 200 281 http-bio-8080-exec-1 155
