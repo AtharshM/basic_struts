@@ -7,7 +7,7 @@
 
     <constant name="struts.devMode" value="true" />
 
-    <package name="basic_project" extends="struts-default">
+    <package name="basicproject" extends="struts-default">
         <action name="index"  class="com.action.FirstAction" method="newMethod">
             <result name="success">/index.jsp</result>
              <result name="failed">/failed.jsp</result>
@@ -15,11 +15,62 @@
              <result name="input">/index.jsp</result>
            
         </action>
-       <action name="DbaccessAction"  class="com.action.DbaccessAction" >
-            <result name="success">/success.jsp</result>
-   
+        
+       <action name="register"  class="com.action.DbaccessAction" method="registerFunction">
+            <result name="success">/login.jsp</result>
+            <result name="failed">/failed.jsp</result>  
+        </action>
+        
+        <action name="login"  class="com.action.DbaccessAction" method="loginFunction">
+            <result name="success">/package.jsp</result>
+            <result name="failed">/failed.jsp</result>  
+        </action>
+        
+        
+         <action name="select"  class="com.action.DbaccessAction" method="selectFunction">
+            <result name="success">/admin.jsp</result>
+            <result name="failed">/failed.jsp</result>  
+        </action>
+        
+         <action name="Request_from_user"  class="com.action.AjaxAction" method="sendRequest">
            
         </action>
+        
+        
+        <action name="Response_from_admin"  class="com.action.AjaxAction" method="getResponse">
+            <result name="true">/success.jsp</result>
+            <result name="false">/package.jsp</result>  
+        </action>
+        
+        
+          <action name="Getting_the_request_from_user"  class="com.action.AjaxAction" method="validatingResponseFromUser">
+                   <result name="true">/success.jsp</result>
+            <result name="false">/package.jsp</result>
+        </action>
+        
+           <action name="Getting_the_response_from_admin"  class="com.action.AjaxAction" method="validatingResponseFromAdmin">
+          
+        </action>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <action name="hello" class="com.action.NewAjaxAction" method="hello">
+        </action>
+
     </package>
 
 </struts>

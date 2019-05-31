@@ -1,0 +1,6 @@
+127.0.0.1 - - [31/May/2019:06:20:25 +0530] "GET /basic_project/register HTTP/1.1" 200 9190 http-bio-8080-exec-1 233
+127.0.0.1 - - [31/May/2019:06:20:26 +0530] "GET /basic_project/register HTTP/1.1" 200 9190 http-bio-8080-exec-2 17
+127.0.0.1 - - [31/May/2019:06:20:34 +0530] "GET /basic_project/register.acrion HTTP/1.1" 404 1009 http-bio-8080-exec-3 4
+127.0.0.1 - - [31/May/2019:06:20:41 +0530] "GET /basic_project/register.jsp HTTP/1.1" 200 1200 http-bio-8080-exec-4 918
+127.0.0.1 - - [31/May/2019:06:20:53 +0530] "POST /basic_project/register.action HTTP/1.1" 200 765 http-bio-8080-exec-6 529
+127.0.0.1 - - [31/May/2019:06:20:55 +0530] "POST /basic_project/login.action HTTP/1.1" 200 2083 http-bio-8080-exec-8 154
