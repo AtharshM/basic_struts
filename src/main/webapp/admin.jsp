@@ -16,10 +16,11 @@ $.ajax({
 	type : "GET",
 	success : function(data)
 	{
-		if(data=="true")
+		
+		if(data)
 			{
 			var result = confirm("Approve or not");
-			if(result)
+			if(result == true)
 				{
 				$.ajax({
 					url : "Response_from_admin.action",
@@ -31,7 +32,7 @@ $.ajax({
 				clearInterval(id);
 
 				}
-			else if(data=="false")
+			else if(result == false)
 				{
 				$.ajax({
 					url : "Response_from_admin.action",
@@ -60,6 +61,6 @@ $.ajax({
 </head>
 <body>
 <h1>selected places are:</h1>
-<s:property value="placeId"/>
+<s:property value="placeName"/>
 </body>
 </html>

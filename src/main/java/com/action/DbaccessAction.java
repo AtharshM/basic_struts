@@ -59,9 +59,8 @@ public class DbaccessAction implements SessionAware, ParameterNameAware {
 	
 	public String loginFunction()
 	{
-	
-		setUsername(username);
-		setPassword(password);
+		
+		System.out.println(username);
 		
 		LoginService loginserviceobj = new LoginService();
 		loginobj = new LoginModel();
@@ -86,7 +85,7 @@ public class DbaccessAction implements SessionAware, ParameterNameAware {
 		userSession.put("placeId", getPlaceId());
 		
 		placeobj = new PlacesModel();
-		
+		System.out.println("saddsfadsfdsf");
 		System.out.println(getPlaceId());
 		placeobj.setPlaceId(getPlaceId());
 		

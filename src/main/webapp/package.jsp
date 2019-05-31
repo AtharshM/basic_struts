@@ -5,23 +5,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Package.jsp</title>
 
 <script src="jquery-3.4.1.min.js" ></script>
 <script>
-$('#submit').on('click', function(e){
+$(document).ready(function(){
+$('#submit').click(function(e){
     e.preventDefault();
     $.ajax({
         url:'Request_from_user.action',
-        data: {place_name:"chennai" }, 
+        data: $("#selectPlace").serialize(), 
         type : "POST",
+       
         success:function(data) {
-        	alert(data);
-        	if(data.equals("package_submitted"))
-        		{
-        		var sub = document.getElementById("submit");
-        		sub.disabled = true;
-        		}
+        	
+        	$('#div').html(response);
         		
        
         },
@@ -35,7 +33,7 @@ $('#submit').on('click', function(e){
     });
 });
 
-
+});
 
 
 
@@ -46,7 +44,8 @@ var id=setInterval(
 			type : "GET",
 			success : function(data)
 			{
-				if(data=="true")
+				
+				if(data)
 					{
 					var result = confirm("Approve or not");
 					if(result)
@@ -66,7 +65,7 @@ var id=setInterval(
 						
 
 						}
-					else if(data=="false")
+					else 
 						{
 						$.ajax({
 							url : "Response_from_admin.action",
@@ -115,6 +114,8 @@ var id=setInterval(
     <option value="snow world">snow world</option>
     </optgroup>
   </select>
+  
+ 
   <input type="submit" id="submit" value="Submit">
 </form>
 

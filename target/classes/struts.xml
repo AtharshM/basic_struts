@@ -32,9 +32,7 @@
             <result name="failed">/failed.jsp</result>  
         </action>
         
-         <action name="Request_from_user"  class="com.action.AjaxAction" method="sendRequest">
-           
-        </action>
+
         
         
         <action name="Response_from_admin"  class="com.action.AjaxAction" method="getResponse">
@@ -63,7 +61,9 @@
         
         
         
-        
+         <action name="Request_from_user"  class="com.action.AjaxAction" method="sendRequest">
+           
+        </action>
         
         
         
